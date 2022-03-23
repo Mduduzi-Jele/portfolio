@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
@@ -103,52 +103,67 @@
 </div>
 
 <!-- Work Section -->
-<div class="w3-container" style="padding:128px 16px" id="work">
+<div class="w3-container text-monospace" style="padding:128px 16px" id="work">
   <h3 class="w3-center">My work</h3>
-  <p class="w3-center w3-large"></p>
+  <br>
 
-  <div class="row">
-    <div class="col">
-      <div class="w3-card-4">
-        <header class="w3-container w3-light-grey">
-          <h3>The exam portal</h3>
-        </header>
-        <div class="w3-container">
-          <p></p>
-          <hr>
-          <img src="Student sign in.PNG" alt="Avatar" class="w3-left">
+  <div class="project">
+
+    <div class="row shadow-lg p-4 mb-4 bg-white">
+      <div class="col-sm-4">
+        <div class="project-image">
+          <img src="student_sign_in.PNG" class="img-thumbnail img-fluid" alt="login screen">
+        </div>
+      </div>
+      <br>
+      <div class="col-sm-8">
+        <div class="project-description">
+          <h3>The online exam portal</h3>
           <p>This project is an exam portal where students can access their test scripts (which are in the pdf format), and upload their answers</p>
+          <h4>Tools</h4>
+          <p>MongoDB, Express, React, Node</p>
+          <p>jwt</p>
+          <button class="w3-button w3-grey w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off"><a href="https://github.com/Mduduzi-Jele/exam-portal.git" class="text-decoration-none">Go to github repo</a></button>
         </div>
-        <button class="w3-button w3-block w3-dark-grey">Go to Github repo</button>
-        </div>
+      </div>
     </div>
-    <div class="col">
-      <div class="w3-card-4">
-        <header class="w3-container w3-light-grey">
-          <h3>The Asci art diamond algorithm</h3>
-        </header>
-        <div class="w3-container">
-          <p></p>
-          <hr>
-          <img src="asci art b.PNG" alt="Avatar" class="w3-left">
+    <br>
+    <div class="row shadow-lg p-4 mb-4 bg-white">
+      <div class="col-sm-4">
+        <div class="project-image">
+          <img src="timer.png" class="img-thumbnail img-fluid" alt="login screen">
+        </div>
+      </div>
+      <br>
+      <div class="col-sm-8">
+        <div class="project-description">
+          <h3 class="text-monospace">The timer</h3>
+          <p >This is a timer where a user can set the duration for the timer and also the duration of the break they want to take</p>
+          <h4>Tools</h4>
+          <p>React</p>
+          <p>javascript</p>
+          <button class="w3-button w3-grey w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off"><a href="https://github.com/Mduduzi-Jele/clock.git" class="text-decoration-none">Go to github repo</a></button>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="row shadow-lg p-4 mb-4 bg-white">
+      <div class="col-sm-4">
+        <div class="project-image">
+          <img src="asci_art.PNG" class="img-thumbnail img-fluid" alt="login screen">
+        </div>
+      </div>
+      <br>
+      <div class="col-sm-8">
+        <div class="project-description">
+          <h3>Asci art</h3>
           <p>This algorithm creates a user resizable diamond with a border using specific characters(/,\,-,=,+,|,<,>). This is an android project build with java</p>
+          <h4>Tools</h4>
+          <p>Java</p>
+          <p>Android studio</p>
+          <button class="w3-button w3-grey w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off"><a href="https://github.com/Mduduzi-Jele/m4-diamonds.git" class="text-decoration-none">Go to github repo</a></button>
         </div>
-        <button class="w3-button w3-block w3-dark-grey">Go to Github repo</button>
-        </div>
-    </div>
-    <div class="col">
-      <div class="w3-card-4">
-        <header class="w3-container w3-light-grey">
-          <h3>The Timer</h3>
-        </header>
-        <div class="w3-container">
-          <p></p>
-          <hr>
-          <img src="timer.PNG" alt="Avatar" class="w3-left">
-          <p>This is a timer where a user can set the duration for the timer and also the duration of the break they want to take</p>
-        </div>
-        <button class="w3-button w3-block w3-dark-grey">Go to Github repo</button>
-        </div>
+      </div>
     </div>
   </div>
   
@@ -263,3 +278,4 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/js/bootstrap.min.js"></script>
 </body>
 </html>
+
