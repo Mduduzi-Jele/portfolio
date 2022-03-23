@@ -39,3 +39,11 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
       background-color: white;
       border-radius: 25px;
     }
+
+    #thanks-envilope {
+      font-size: 150px;
+    }
+
+    #thanks {
+      height: 100vh;
+    }
