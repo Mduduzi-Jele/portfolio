@@ -1,0 +1,44 @@
+@import url("sections/home.css");
+@import url("sections/about.css");
+@import url("sections/skills.css");
+@import url("sections/projects.css");
+@import url("sections/contact.css");
+@import url("sections/footer.css");
+
+body {
+    font-family: var(--font);
+}
+
+:root {
+  --font : Cardo,Georgia,serif;
+}
+
+
+/* Media query for screens smaller than 600px (e.g., mobile phones) */
+@media (max-width: 600px) {
+  .about__title {
+    font-size: 2.5rem;
+    max-width: 100%;
+    line-height: 3rem;
+}
+
+.footer {
+  flex-direction: column;
+  padding: 2rem 0 1rem 0;
+}
+
+}
+
+/* Media query for screens between 601px and 1024px (e.g., tablets) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  /* body {
+    font-size: 18px;
+  } */
+}
+
+/* Media query for screens larger than 1024px (e.g., desktops) */
+@media (min-width: 1025px) {
+  /* body {
+    font-size: 20px;
+  } */
+}

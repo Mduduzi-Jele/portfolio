@@ -1,0 +1,61 @@
+.home {
+    background-image: url(../../assets/background.jpg);
+    width: auto;
+    height: 100vh;
+    background-size: cover;
+}
+
+.home__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3% 2% 2% 2%;
+    position: sticky;
+    top: 0;
+    flex-wrap: wrap;
+    background-color:rgba(240, 248, 255, 0.5);
+}
+
+.home__header__nav-one {
+    display: flex;
+    gap: 5%;
+}
+
+.home__header__nav-one li {
+    font-size: 1rem;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.home__header__nav-one li:hover {
+    color: aliceblue;
+    background-color: black;
+}
+
+.logo {
+    width: 9rem;
+}
+
+.home__header__nav-two {
+    display: flex;
+    gap: 5%;
+    padding-right: 2%;
+}
+
+.home__header__nav-two li {
+    font-size: 1rem;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.home__header__nav-two li:hover {
+    color: aliceblue;
+    background-color: black;
+}
+
+.home__title {
+    color: white;
+    text-align: center;
+    margin-top: 30%;
+    font-size: 3.5rem;
+}

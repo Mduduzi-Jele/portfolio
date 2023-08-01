@@ -1,0 +1,124 @@
+.projects {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-image: url("../../assets/background-three.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0 3rem 0 3rem;
+  background-position: center;
+}
+
+.projects__arrow {
+  fill: aliceblue;
+  width: 100px;
+  height: 300px;
+}
+
+.projects__card {
+  width: 35rem;
+  height: 40rem;
+  background: rgba(210, 210, 210, 0.9);
+  transition: 1s ease-in-out;
+  clip-path: polygon(
+    30px 0%,
+    100% 0,
+    100% calc(100% - 30px),
+    calc(100% - 30px) 100%,
+    0 100%,
+    0% 30px
+  );
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font);
+}
+
+.projects__card__img {
+  width: 90%;
+  height: 35%;
+  border-radius: 15px;
+  margin: auto;
+  background-image: url("");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: width 0.3s, height 0.3s;
+}
+
+.projects__card__title {
+  font-weight: bold;
+  color: black;
+  text-align: center;
+  display: block;
+  font-size: 1em;
+}
+
+.projects__card__subtitle {
+  font-weight: 400;
+  color: black;
+  display: block;
+  text-align: center;
+  font-size: 0.72em;
+  margin: 3em 1em 1em 1em;
+}
+
+.projects__card .projects__card__img:hover {
+  width: 100%;
+  height: 100%;
+}
+
+.projects__card__button {
+  text-decoration: none;
+  padding: 0.8em 1.7em;
+  display: block;
+  margin: auto;
+  border-radius: 25px;
+  border: none;
+  font-weight: bold;
+  background: aliceblue;
+  transition: 0.4s ease-in-out;
+}
+
+.projects__card__button a {
+  text-decoration: none;
+  color: black;
+}
+
+.projects__card__button:hover {
+  background: black;
+  cursor: pointer;
+}
+
+.projects__card__button a:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.card__skills {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 2.5rem;
+}
+
+.skills__image {
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+}
+
+.skills__image img {
+  width: 2rem;
+}
+
+#skillsImage1 img {
+  width: 1.5rem;
+}

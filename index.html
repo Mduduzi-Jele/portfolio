@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Sofia"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Cardo"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Zeyada"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="home">
+      <div class="home__header">
+        <ul class="home__header__nav-one">
+          <li>ABOUT</li>
+          <li>SKILLS</li>
+          <li>PROJECTS</li>
+        </ul>
+        <img class="logo" src="./assets/logo.svg" />
+        <ul class="home__header__nav-two">
+          <li>CONTACT</li>
+          <li>EXPERIENCE</li>
+          <li>BLOG</li>
+        </ul>
+      </div>
+
+      <h1 id="cool" class="home__title">mduduzi / jele</h1>
+    </div>
+
+    <div class="about">
+      <h1 class="about__title">
+        Hi, my name is Mduduzi Jele and I am a Software Developer
+      </h1>
+
+      <div class="about__content">
+        <p>
+          I am a dedicated and enthusiastic
+          <u>full-stack software developer</u> with a passion for technology.
+          Holding a National Diploma in Information Technology, I have honed my
+          skills and expertise to craft innovative solutions in the digital
+          world.
+        </p>
+        <br />
+        <p>
+          On the <u>frontend</u>, I am well-versed in building dynamic and
+          user-friendly interfaces using the powerful combination of
+          <u>React, HTML, CSS, and JavaScript</u>. Creating seamless and
+          visually appealing experiences for users is one of my top priorities.
+        </p>
+        <br />
+        <p>
+          For the backend, I thrive on utilizing the best tools for the job. My
+          stack includes <u>Node.js with Express.js</u>, allowing me to develop
+          robust and efficient server-side applications. Additionally, I am
+          skilled in <u>Java with Spring Boot</u>, which empowers me to
+          construct high-performance, scalable, and enterprise-grade systems.
+        </p>
+        <br />
+        <p>
+          When it comes to data management, I am proficient in working with
+          <u>MySQL and MongoDB databases</u>. Whether it's handling complex data
+          structures or ensuring data integrity, I take pride in designing
+          efficient and reliable database architectures.
+        </p>
+        <br />
+        <p>
+          I am constantly seeking opportunities to expand my knowledge and stay
+          up-to-date with the latest advancements in the tech industry.
+          Problem-solving is my forte, and I approach every project with a
+          creative mindset, looking for innovative ways to tackle challenges and
+          deliver exceptional results.
+        </p>
+        <br />
+        <p>
+          Above all, I believe in the power of collaboration and teamwork.
+          Working alongside like-minded individuals to create cutting-edge
+          solutions is what drives me in my career as a software developer.
+        </p>
+        <div class="about__content__button"><span>more about me</span></div>
+      </div>
+    </div>
+
+    <div class="projects">
+      <svg
+        id="prev"
+        onclick="prev()"
+        class="projects__arrow"
+        xmlns="http://www.w3.org/2000/svg"
+        height="48"
+        viewBox="0 -960 960 960"
+        width="48"
+      >
+        <path d="M400-80 0-480l400-400 56 57-343 343 343 343-56 57Z" />
+      </svg>
+
+      <div class="projects__card">
+        <div id="background" class="projects__card__img 0"></div>
+        <h2 id="h" class="projects__card__title"></h2>
+        <p id="p" class="projects__card__subtitle"></p>
+        <div id="skills" class="card__skills"></div>
+        <div class="projects__card__button">
+          <a id="a" href="https://github.com">More</a>
+        </div>
+      </div>
+
+      <svg
+        id="next"
+        onclick="next()"
+        class="projects__arrow"
+        xmlns="http://www.w3.org/2000/svg"
+        height="48"
+        viewBox="0 -960 960 960"
+        width="48"
+      >
+        <path d="m304-82-56-57 343-343-343-343 56-57 400 400L304-82Z" />
+      </svg>
+    </div>
+
+    <div class="contact">
+      <div class="contact__content">
+        <h1>Contact</h1>
+        <p>
+          If you would like to know more about my work, write to me to make an
+          appointment. I will be very happy to welcome you. For more information
+          about services, custom orders or collaborations you can contact me
+          using the form below, or writing directly to the email
+        </p>
+
+        <form
+          action="https://formsubmit.co/jelemduduzisa@gmail.com"
+          method="POST"
+          class="contact__content__form"
+        >
+          <input
+            class="contact__content__name-surname"
+            name="name"
+            type="text"
+            placeholder="Name and surname"
+            required
+          />
+          <input
+            class="contact__content__email"
+            name="email"
+            type="text"
+            placeholder="Email address"
+            required
+          />
+          <input
+            class="contact__content__message"
+            name="message"
+            type="text"
+            placeholder="Message"
+            required
+          />
+
+          <div type="submit" class="contact__content__button">
+            <span>send</span>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer">
+      <img class="logo" src="./assets/logo.svg" />
+
+      <div class="footer__social">
+        <img src="./assets/logos/twitter.svg" />
+        <img src="./assets/logos/instagram.svg" />
+        <img src="./assets/logos/linkedin.svg" />
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
