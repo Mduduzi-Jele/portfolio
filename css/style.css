@@ -1,6 +1,5 @@
 @import url("sections/home.css");
 @import url("sections/about.css");
-@import url("sections/skills.css");
 @import url("sections/projects.css");
 @import url("sections/contact.css");
 @import url("sections/footer.css");
@@ -13,7 +12,28 @@ body {
   --font: Cardo, Georgia, serif;
 }
 
-@media(max-width: 393px) {
+@media (max-width: 393px) {
+
+  .home__header {
+    height: 10%;
+  }
+
+  .home__header__menu {
+    display: block;
+  }
+
+  .home__header__nav-one {
+    display: none;
+  }
+
+  .home__header__nav-two {
+    display: none;
+  }
+
+  .home__title{
+    font-size: 2.5rem;
+  }
+
   .about__title {
     font-size: 2.5rem;
     width: 100%;
@@ -42,11 +62,26 @@ body {
 }
 
 /* Media query for screens smaller than 600px (e.g., mobile phones) */
-@media(min-width: 394px) and (max-width: 600px) {
+@media (min-width: 394px) and (max-width: 600px) {
+  .home__header {
+    height: 10%;
+  }
+  
+  .home__header__menu {
+    display: block;
+  }
   .about__title {
     font-size: 2.5rem;
     width: 100%;
     line-height: 3rem;
+  }
+
+  .home__header__nav-one {
+    display: none;
+  }
+
+  .home__header__nav-two {
+    display: none;
   }
 
   .about__div {
@@ -92,6 +127,31 @@ body {
     margin-top: -40rem;
     width: 75%;
     margin-left: 8rem;
+    width: 75%;
+  }
+}
+
+@media (min-width: 1201px) {
+  .about__div {
+    height: 50rem;
+  }
+
+  .about__title {
+    font-size: 2.5rem;
+    width: 100%;
+    line-height: 3rem;
+  }
+
+  .about__div {
+    width: 40rem;
+    height: 50rem;
+    margin-left: 8rem;
+  }
+
+  .about__content {
+    margin-top: -38.5rem;
+    width: 75%;
+    margin-left: 15rem;
     width: 75%;
   }
 }

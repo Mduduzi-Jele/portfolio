@@ -15,24 +15,22 @@ function addTuls(arr) {
   console.log("Adding tools...");
   removeAllChildElements();
   arr.map((tul, index) => {
-
     // create a div for every image logo
     var imgDiv = document.createElement("div");
-    imgDiv.className = "skills__image"
-    imgDiv.id = `skillsImage${index}`
+    imgDiv.className = "skills__image";
+    imgDiv.id = `skillsImage${index}`;
 
     //append the div to skills div
     var skills = document.getElementById("skills");
-    skills.appendChild(imgDiv)
+    skills.appendChild(imgDiv);
 
     //create and Image element
     var img = document.createElement("img");
     img.src = `./assets/logos/${tul}`;
 
-    // append the Image element to the myDiv element 
+    // append the Image element to the myDiv element
     var skillsImage = document.getElementById(`skillsImage${index}`);
-    skillsImage.appendChild(img)
-    
+    skillsImage.appendChild(img);
   });
   console.log("Finnishing adding tools...");
 }
@@ -85,6 +83,7 @@ function next() {
 
     addTuls(content[count].tul);
   }
+  console.log("hello")
 }
 
 function prev() {
@@ -103,3 +102,16 @@ function prev() {
     addTuls(content[count].tul);
   }
 }
+
+const checkbox = document.getElementById("checkbox");
+const home__nav__menu = document.getElementById("home");
+
+checkbox.addEventListener("click", function() {
+  // Code to be executed when the checkbox is clicked
+  if(home__nav__menu.style.display != "block"){
+    home__nav__menu.style.display = "block"
+  } else {
+    home__nav__menu.style.display = "none"
+  }
+  console.log("Hello")
+});
