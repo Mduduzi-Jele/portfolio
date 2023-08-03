@@ -5,19 +5,19 @@
     align-items: center;
     justify-content: space-between;
     background-color:rgba(240, 248, 255, 0.5);
+    justify-content: center;
 }
 
 .footer__social {
     display: flex;
-    flex-wrap: wrap;
 }
 
-.footer__social img {
+.footer__social svg {
     width: 3rem;
     padding: 0 1rem 0 1rem;
+    fill: aliceblue;
 }
 
 .footer__social img:first-child {
-    width: 4rem;
 }
 

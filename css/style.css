@@ -1,3 +1,4 @@
+@import url("sections/loader.css");
 @import url("sections/home.css");
 @import url("sections/about.css");
 @import url("sections/projects.css");
@@ -63,95 +64,18 @@ body {
 
 /* Media query for screens smaller than 600px (e.g., mobile phones) */
 @media (min-width: 394px) and (max-width: 600px) {
-  .home__header {
-    height: 10%;
-  }
   
-  .home__header__menu {
-    display: block;
-  }
-  .about__title {
-    font-size: 2.5rem;
-    width: 100%;
-    line-height: 3rem;
-  }
-
-  .home__header__nav-one {
-    display: none;
-  }
-
-  .home__header__nav-two {
-    display: none;
-  }
-
-  .about__div {
-    width: 10rem;
-    height: 30rem;
-  }
-
-  .about__content {
-    border-radius: 10px 0 0 10px;
-    padding: 2rem;
-    margin-top: -28rem;
-    background-color: white;
-    margin-left: 5rem;
-    width: 58%;
-    border-right: 1px solid black;
-  }
-
-  .footer {
-    flex-direction: column;
-    padding: 2rem 0 1rem 0;
-  }
 }
 
 /* Media query for screens between 601px and 1024px (e.g., tablets) */
 @media (min-width: 601px) and (max-width: 820px) {
-  .about__content {
-    border-radius: 10px 0 0 10px;
-    padding: 2rem;
-    margin-top: -32.5rem;
-    background-color: white;
-    width: 68%;
-    border-right: 1px solid black;
-  }
+
 }
 
 /* Media query for screens larger than 1024px (e.g., desktops) */
 @media (min-width: 821px) and (max-width: 1200px) {
-  .about__div {
-    height: 50rem;
-  }
 
-  .about__content {
-    margin-top: -40rem;
-    width: 75%;
-    margin-left: 8rem;
-    width: 75%;
-  }
 }
 
 @media (min-width: 1201px) {
-  .about__div {
-    height: 50rem;
-  }
-
-  .about__title {
-    font-size: 2.5rem;
-    width: 100%;
-    line-height: 3rem;
-  }
-
-  .about__div {
-    width: 40rem;
-    height: 50rem;
-    margin-left: 8rem;
-  }
-
-  .about__content {
-    margin-top: -38.5rem;
-    width: 75%;
-    margin-left: 15rem;
-    width: 75%;
-  }
 }

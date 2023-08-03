@@ -83,7 +83,7 @@ function next() {
 
     addTuls(content[count].tul);
   }
-  console.log("hello")
+  console.log("hello");
 }
 
 function prev() {
@@ -106,12 +106,24 @@ function prev() {
 const checkbox = document.getElementById("checkbox");
 const home__nav__menu = document.getElementById("home");
 
-checkbox.addEventListener("click", function() {
+checkbox.addEventListener("click", function () {
   // Code to be executed when the checkbox is clicked
-  if(home__nav__menu.style.display != "block"){
-    home__nav__menu.style.display = "block"
+  if (home__nav__menu.style.display != "block") {
+    home__nav__menu.style.display = "block";
   } else {
-    home__nav__menu.style.display = "none"
+    home__nav__menu.style.display = "none";
   }
-  console.log("Hello")
+  console.log("Hello");
 });
+
+// Show the loader when the page starts loading
+// document.onreadystatechange = function () {
+//   if (document.readyState !== "complete") {
+//     document.getElementById("loader").style.display = "flex";
+//   }
+// };
+
+// // Hide the loader when the page finishes loading
+// window.onload = function () {
+//   document.getElementById("loader").style.display = "none";
+// };

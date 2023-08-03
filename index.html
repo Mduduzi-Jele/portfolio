@@ -32,6 +32,8 @@
     <title>Document</title>
   </head>
   <body>
+    <div id="loader"></div>
+
     <div class="home">
       <div class="home__header">
         <ul class="home__header__nav-one">
@@ -64,18 +66,18 @@
           <li>BLOG</li>
         </ul>
       </div>
+      <div class="container"></div>
       <h1 id="cool" class="home__title">mduduzi / jele</h1>
     </div>
 
     <div class="about">
-      <h1 class="about__title">
-        Hi, my name is Mduduzi Jele and I am a Software Developer
-      </h1>
-
       <div class="about__container">
-        <div class="about__div"></div>
+        <div class="about__div">
+          <p>hello</p>
+        </div>
 
         <div class="about__content">
+          <h1 class="about__title">ABOUT ME</h1>
           <p>
             I am a dedicated and enthusiastic
             <u>full-stack software developer</u> with a passion for technology.
@@ -120,8 +122,8 @@
             Working alongside like-minded individuals to create cutting-edge
             solutions is what drives me in my career as a software developer.
           </p>
+          <div class="about__content__button"><span>more about me</span></div>
         </div>
-        <div class="about__content__button"><span>more about me</span></div>
       </div>
     </div>
 
@@ -171,36 +173,75 @@
           using the form below, or writing directly to the email
         </p>
 
-        <form
-          action="https://formsubmit.co/jelemduduzisa@gmail.com"
-          method="POST"
-          class="contact__content__form"
-        >
-          <input
-            class="contact__content__name-surname"
-            name="name"
-            type="text"
-            placeholder="Name and surname"
-            required
-          />
-          <input
-            class="contact__content__email"
-            name="email"
-            type="text"
-            placeholder="Email address"
-            required
-          />
-          <input
-            class="contact__content__message"
-            name="message"
-            type="text"
-            placeholder="Message"
-            required
-          />
-
-          <div type="submit" class="contact__content__button">
-            <span>send</span>
+        <form action="" class="form_main">
+          <p class="heading">Contact Me</p>
+          <div class="inputContainer">
+            <svg
+              class="inputIcon"
+              xmlns="http://www.w3.org/2000/svg"
+              height="40"
+              viewBox="0 -960 960 960"
+              width="40"
+            >
+              <path
+                d="M480-481q-66 0-108-42t-42-108q0-66 42-108t108-42q66 0 108 42t42 108q0 66-42 108t-108 42ZM160-160v-94q0-38 19-65t49-41q67-30 128.5-45T480-420q62 0 123 15.5t127.921 44.694q31.301 14.126 50.19 40.966Q800-292 800-254v94H160Zm60-60h520v-34q0-16-9.5-30.5T707-306q-64-31-117-42.5T480-360q-57 0-111 11.5T252-306q-14 7-23 21.5t-9 30.5v34Zm260-321q39 0 64.5-25.5T570-631q0-39-25.5-64.5T480-721q-39 0-64.5 25.5T390-631q0 39 25.5 64.5T480-541Zm0-90Zm0 411Z"
+              />
+            </svg>
+            <input
+              type="text"
+              class="inputField"
+              id="name"
+              placeholder="name"
+            />
           </div>
+
+          <div class="inputContainer">
+            <svg
+              class="inputIcon"
+              xmlns="http://www.w3.org/2000/svg"
+              height="40"
+              viewBox="0 -960 960 960"
+              width="40"
+            >
+              <path
+                d="M140-160q-24 0-42-18t-18-42v-520q0-24 18-42t42-18h680q24 0 42 18t18 42v520q0 24-18 42t-42 18H140Zm340-302L140-685v465h680v-465L480-462Zm0-60 336-218H145l335 218ZM140-685v-55 520-465Z"
+              />
+            </svg>
+            <input
+              type="text"
+              class="inputField"
+              id="email"
+              placeholder="email"
+            />
+          </div>
+
+          <div class="inputContainer">
+            <svg
+              class="inputIcon"
+              xmlns="http://www.w3.org/2000/svg"
+              height="40"
+              viewBox="0 -960 960 960"
+              width="40"
+            >
+              <path
+                d="M240-399h313v-60H240v60Zm0-130h480v-60H240v60Zm0-130h480v-60H240v60ZM80-80v-740q0-24 18-42t42-18h680q24 0 42 18t18 42v520q0 24-18 42t-42 18H240L80-80Zm134-220h606v-520H140v600l74-80Zm-74 0v-520 520Z"
+              />
+            </svg>
+            <input
+              type="password"
+              class="inputField"
+              id="message"
+              placeholder="message"
+            />
+          </div>
+
+          <a href="#">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Submit
+          </a>
         </form>
       </div>
     </div>
@@ -208,11 +249,7 @@
     <div class="footer">
       <img class="logo" src="./assets/logo.svg" />
 
-      <div class="footer__social">
-        <img src="./assets/logos/twitter.svg" />
-        <img src="./assets/logos/instagram.svg" />
-        <img src="./assets/logos/linkedin.svg" />
-      </div>
+      <div class="footer__social"></div>
     </div>
     <script src="index.js"></script>
   </body>
