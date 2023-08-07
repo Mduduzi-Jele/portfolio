@@ -45,7 +45,13 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  transition: width 0.3s, height 0.3s;
+}
+
+.projects__card__img img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+  object-position: center;
 }
 
 .projects__card__title {
@@ -63,11 +69,6 @@
   text-align: center;
   font-size: 0.72em;
   margin: 3em 1em 1em 1em;
-}
-
-.projects__card .projects__card__img:hover {
-  width: 100%;
-  height: 100%;
 }
 
 .projects__card__button {

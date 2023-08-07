@@ -3,8 +3,8 @@ let h = document.getElementById("h");
 let p = document.getElementById("p");
 let a = document.getElementById("a");
 
-function removeAllChildElements() {
-  const myDiv = document.getElementById("skills");
+function removeAllChildElements(id) {
+  const myDiv = document.getElementById(id);
 
   while (myDiv.firstChild) {
     myDiv.removeChild(myDiv.firstChild);
@@ -13,7 +13,7 @@ function removeAllChildElements() {
 
 function addTuls(arr) {
   console.log("Adding tools...");
-  removeAllChildElements();
+  removeAllChildElements("skills");
   arr.map((tul, index) => {
     // create a div for every image logo
     var imgDiv = document.createElement("div");
@@ -59,7 +59,13 @@ const content = [
   },
 ];
 
-background.style.backgroundImage = `url(${content[0].background})`;
+var imgBG = document.createElement("img");
+imgBG.src = content[0].background;
+
+// append the Image element to the myDiv element
+var bgDiv = document.getElementById(`background`);
+bgDiv.appendChild(imgBG);
+
 h.innerText = content[0].h;
 p.innerText = content[0].p;
 a.href = content[0].a;
@@ -74,7 +80,11 @@ function next() {
 
   if (no < 2) {
     let count = no + 1;
-    background.style.backgroundImage = `url(${content[count].background})`;
+    removeAllChildElements("background");
+    var imgBG = document.createElement("img");
+    imgBG.src = content[count].background;
+    var bgDiv = document.getElementById(`background`);
+    bgDiv.appendChild(imgBG);
     h.innerText = content[count].h;
     p.innerText = content[count].p;
     a.href = content[count].a;
@@ -93,7 +103,11 @@ function prev() {
 
   if (no > 0) {
     let count = no - 1;
-    background.style.backgroundImage = `url(${content[count].background})`;
+    removeAllChildElements("background");
+    var imgBG = document.createElement("img");
+    imgBG.src = content[count].background;
+    var bgDiv = document.getElementById(`background`);
+    bgDiv.appendChild(imgBG);
     h.innerText = content[count].h;
     p.innerText = content[count].p;
     a.href = content[count].a;

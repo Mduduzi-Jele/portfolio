@@ -15,10 +15,6 @@ body {
 
 @media (max-width: 393px) {
   .home {
-    background-image: url(../../assets/background.jpg);
-    width: auto;
-    height: 100vh;
-    background-size: cover;
     display: flex;
     flex-direction: column;
     background-position: center;
@@ -86,13 +82,9 @@ body {
   }
 
   .projects {
-    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-image: url("../../assets/background-three.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
     padding: 2rem 0.5rem 2rem 0.5rem;
     background-position: center;
   }
@@ -152,10 +144,6 @@ body {
 /* Media query for screens smaller than 600px (e.g., mobile phones) */
 @media (min-width: 394px) and (max-width: 600px) {
   .home {
-    background-image: url(../../assets/background.jpg);
-    width: auto;
-    height: 100vh;
-    background-size: cover;
     display: flex;
     flex-direction: column;
     background-position: center;
@@ -223,13 +211,9 @@ body {
   }
 
   .projects {
-    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-image: url("../../assets/background-three.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
     padding: 2rem 0.5rem 2rem 0.5rem;
     background-position: center;
   }
@@ -324,11 +308,4 @@ body {
     border-right: 1px solid black;
     height: fit-content;
   }
-}
-
-/* Media query for screens larger than 1024px (e.g., desktops) */
-@media (min-width: 821px) and (max-width: 1200px) {
-}
-
-@media (min-width: 1201px) {
 }
