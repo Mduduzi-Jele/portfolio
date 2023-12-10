@@ -3,8 +3,7 @@
     height: 7rem;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    background-color:rgba(240, 248, 255, 0.5);
+    background-color: rgb(92, 131, 116, 0.5);
     justify-content: center;
 }
 
@@ -16,8 +15,5 @@
     width: 3rem;
     padding: 0 1rem 0 1rem;
     fill: aliceblue;
-}
-
-.footer__social img:first-child {
 }
 

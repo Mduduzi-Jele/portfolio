@@ -1,120 +1,59 @@
-let background = document.getElementById("background");
-let h = document.getElementById("h");
-let p = document.getElementById("p");
-let a = document.getElementById("a");
+const elements = document.querySelectorAll('.project-item');
 
-function removeAllChildElements(id) {
-  const myDiv = document.getElementById(id);
+let projects = [{
+  h: "Content management site for south African public schools",
+  p: "A blog site serves as an online platform where individuals, businesses, or organizations share a diverse range of content, providing insights, information, and perspectives on various topics. These digital spaces have become instrumental in fostering communication and community engagement. A well-designed blog site often features a user-friendly interface, allowing readers to easily navigate through a collection of articles, opinion pieces, and multimedia content. It serves as a dynamic space for writers to express their thoughts, expertise, and creativity while fostering interaction through comments and social media integration. Whether focusing on lifestyle, technology, business, or personal narratives, a blog site acts as a virtual forum.",
+  imgUrl: `./assets/portfolio-images/blogpost.jpg`
+},
+{
+  h: "My personal blog ",
+  p: "A blog site serves as an online platform where individuals, businesses, or organizations share a diverse range of content, providing insights, information, and perspectives on various topics. These digital spaces have become instrumental in fostering communication and community engagement. A well-designed blog site often features a user-friendly interface, allowing readers to easily navigate through a collection of articles, opinion pieces, and multimedia content. It serves as a dynamic space for writers to express their thoughts, expertise, and creativity while fostering interaction through comments and social media integration. Whether focusing on lifestyle, technology, business, or personal narratives, a blog site acts as a virtual forum.",
+  imgUrl: "./assets/portfolio-images/Customer-Service-Software.jpg"
+},
+{
+  h: "A landing page for Dronoticz",
+  p: "A blog site serves as an online platform where individuals, businesses, or organizations share a diverse range of content, providing insights, information, and perspectives on various topics. These digital spaces have become instrumental in fostering communication and community engagement. A well-designed blog site often features a user-friendly interface, allowing readers to easily navigate through a collection of articles, opinion pieces, and multimedia content. It serves as a dynamic space for writers to express their thoughts, expertise, and creativity while fostering interaction through comments and social media integration. Whether focusing on lifestyle, technology, business, or personal narratives, a blog site acts as a virtual forum.",
+  imgUrl: "./assets/portfolio-images/diagnostics.jpg"
+},
+{
+  h: "A website for people to create and share surveys.",
+  p: "A blog site serves as an online platform where individuals, businesses, or organizations share a diverse range of content, providing insights, information, and perspectives on various topics. These digital spaces have become instrumental in fostering communication and community engagement. A well-designed blog site often features a user-friendly interface, allowing readers to easily navigate through a collection of articles, opinion pieces, and multimedia content. It serves as a dynamic space for writers to express their thoughts, expertise, and creativity while fostering interaction through comments and social media integration. Whether focusing on lifestyle, technology, business, or personal narratives, a blog site acts as a virtual forum.",
+  imgUrl: "./assets/portfolio-images/market-research-intellect.png"
+},
+{
+  h: "A simple react file upload site.",
+  p: "A blog site serves as an online platform where individuals, businesses, or organizations share a diverse range of content, providing insights, information, and perspectives on various topics. These digital spaces have become instrumental in fostering communication and community engagement. A well-designed blog site often features a user-friendly interface, allowing readers to easily navigate through a collection of articles, opinion pieces, and multimedia content. It serves as a dynamic space for writers to express their thoughts, expertise, and creativity while fostering interaction through comments and social media integration. Whether focusing on lifestyle, technology, business, or personal narratives, a blog site acts as a virtual forum.",
+  imgUrl: "./assets/portfolio-images/technical-illustration-software.png"
+},
+{
+  h: "A react clock",
+  p: "A blog site serves as an online platform where individuals, businesses, or organizations share a diverse range of content, providing insights, information, and perspectives on various topics. These digital spaces have become instrumental in fostering communication and community engagement. A well-designed blog site often features a user-friendly interface, allowing readers to easily navigate through a collection of articles, opinion pieces, and multimedia content. It serves as a dynamic space for writers to express their thoughts, expertise, and creativity while fostering interaction through comments and social media integration. Whether focusing on lifestyle, technology, business, or personal narratives, a blog site acts as a virtual forum.",
+  imgUrl: "./assets/portfolio-images/UML-diagrams.png"
+},
+]
 
-  while (myDiv.firstChild) {
-    myDiv.removeChild(myDiv.firstChild);
-  }
+for (let i = 0; i < projects.length; i++) {
+  elements[i].addEventListener("mouseover", () => {
+    document.getElementById("h").textContent = projects[i].h
+    // elements[i].style.width = 
+    document.getElementById("p").textContent = projects[i].p
+    document.getElementById("imgUrl").style.display = "inline"
+    document.getElementById("imgUrl").src = projects[i].imgUrl
+  })
 }
 
-function addTuls(arr) {
-  console.log("Adding tools...");
-  removeAllChildElements("skills");
-  arr.map((tul, index) => {
-    // create a div for every image logo
-    var imgDiv = document.createElement("div");
-    imgDiv.className = "skills__image";
-    imgDiv.id = `skillsImage${index}`;
-
-    //append the div to skills div
-    var skills = document.getElementById("skills");
-    skills.appendChild(imgDiv);
-
-    //create and Image element
-    var img = document.createElement("img");
-    img.src = `./assets/logos/${tul}`;
-
-    // append the Image element to the myDiv element
-    var skillsImage = document.getElementById(`skillsImage${index}`);
-    skillsImage.appendChild(img);
-  });
-  console.log("Finnishing adding tools...");
-}
-
-const content = [
-  {
-    h: `Survey Site`,
-    p: `This is a survey site that collects data from a user and saves that data to a database.The site asks simple quetions about a user's preferences. The site is built using Nodejs(expressjs), I used a templete engine named ejs for the frontend and MySql`,
-    a: `https://github.com`,
-    background: `./assets/project-one.png`,
-    tul: ["HTML5.svg", "CSS3.svg", "expressjs.svg", "mysql.svg"],
-  },
-  {
-    h: `Clock`,
-    p: `This is a timer. In this timer you set the duration of your activity and you also get to set the duration of the break you want to take. This is a React project using javascript html and css`,
-    a: `https://googgle.com`,
-    background: `./assets/project-two.png`,
-    tul: ["HTML5.svg", "CSS3.svg", "React.svg"],
-  },
-  {
-    h: `Dronoticz`,
-    p: `This is a landing page for an organization that "creates intelligent machines that seamlessly integrate into daily life, enhancing productivity, safety, and efficiency.Join us on this exciting journey as we unlock new frontiers, solve complex challenges, and shape a future where intelligent machines work hand-in-hand with humans. Discover the power of robotics and be part of the revolution". This is built using html css and a little javascript`,
-    a: `https://mduduzi-jele.github.io/website-two/`,
-    background: `./assets/project-three.png`,
-    tul: ["HTML5.svg", "CSS3.svg", "javascript.svg"],
-  },
-];
-
-var imgBG = document.createElement("img");
-imgBG.src = content[0].background;
-
-// append the Image element to the myDiv element
-var bgDiv = document.getElementById(`background`);
-bgDiv.appendChild(imgBG);
-
-h.innerText = content[0].h;
-p.innerText = content[0].p;
-a.href = content[0].a;
-
-addTuls(content[0].tul);
-
-function next() {
-  console.log("executing...");
-
-  let arr = Array.from(background.classList);
-  let no = parseInt(arr[1]);
-
-  if (no < 2) {
-    let count = no + 1;
-    removeAllChildElements("background");
-    var imgBG = document.createElement("img");
-    imgBG.src = content[count].background;
-    var bgDiv = document.getElementById(`background`);
-    bgDiv.appendChild(imgBG);
-    h.innerText = content[count].h;
-    p.innerText = content[count].p;
-    a.href = content[count].a;
-    background.classList.remove(`${no}`);
-    background.classList.add(`${count}`);
-
-    addTuls(content[count].tul);
-  }
-  console.log("hello");
-}
-
-function prev() {
-  console.log("executing...");
-  let arr = Array.from(background.classList);
-  let no = parseInt(arr[1]);
-
-  if (no > 0) {
-    let count = no - 1;
-    removeAllChildElements("background");
-    var imgBG = document.createElement("img");
-    imgBG.src = content[count].background;
-    var bgDiv = document.getElementById(`background`);
-    bgDiv.appendChild(imgBG);
-    h.innerText = content[count].h;
-    p.innerText = content[count].p;
-    a.href = content[count].a;
-    background.classList.remove(`${no}`);
-    background.classList.add(`${count}`);
-    addTuls(content[count].tul);
-  }
+for (let i = 0; i < elements.length; i++) {
+  elements[i].addEventListener("mouseout", () => {
+    document.getElementById("h").textContent = "3 years of React and Java"
+    document.getElementById("p").textContent = `Default. A blog site serves as an online platform where individuals,
+    businesses, or organizations share a diverse range of content, providing insights, information, and perspectives
+    on various topics. These digital spaces have become instrumental in fostering communication and community
+    engagement. A well-designed blog site often features a user-friendly interface, allowing readers to easily
+    navigate through a collection of articles, opinion pieces, and multimedia content. It serves as a dynamic space
+    for writers to express their thoughts, expertise, and creativity while fostering interaction through comments and
+    social media integration.`
+    document.getElementById("imgUrl").style.display = "none"
+  })
 }
 
 const checkbox = document.getElementById("checkbox");
@@ -129,15 +68,3 @@ checkbox.addEventListener("click", function () {
   }
   console.log("Hello");
 });
-
-// Show the loader when the page starts loading
-// document.onreadystatechange = function () {
-//   if (document.readyState !== "complete") {
-//     document.getElementById("loader").style.display = "flex";
-//   }
-// };
-
-// // Hide the loader when the page finishes loading
-// window.onload = function () {
-//   document.getElementById("loader").style.display = "none";
-// };

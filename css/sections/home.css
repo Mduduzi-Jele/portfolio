@@ -1,5 +1,5 @@
 .home {
-  background-image: url("../../assets/background.jpg");
+  background-image: url("../../assets/portfolio-images/background-no\ background.png");
   width: auto;
   height: 100vh;
   background-size: cover;
@@ -7,6 +7,7 @@
   flex-direction: column;
   background-position: center;
   background-repeat: no-repeat;
+  background-color: rgb(92, 131, 116, 0.8)
 }
 
 .home__header {
@@ -17,7 +18,7 @@
   position: sticky;
   top: 0;
   flex-wrap: wrap;
-  background-color: rgba(240, 248, 255, 0.5);
+  background-color: rgb(92, 131, 116, 0.8);
 }
 
 .home__header__nav-one {
@@ -122,7 +123,7 @@
 }
 
 .home__title {
-  color: black;
+  color: #1B4242;
   text-align: center;
   margin-top: 30%;
   font-size: 3.5rem;
