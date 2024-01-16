@@ -57,13 +57,14 @@
 .project-description #h {
   color: black;
   font-weight: bolder;
-  font-size: 1rem;
+  font-size: 3rem;
   padding: 1rem 0rem 1rem 0rem;
 }
 
 .project-description #p {
   color: black;
-  line-height: 1.2rem;
+  line-height: 1.8rem;
+  font-size: 1.5rem;
 }
 
 #imgUrl {

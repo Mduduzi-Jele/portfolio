@@ -23,7 +23,7 @@ let projects = [{
 },
 {
   h: "A website for people to create and share surveys.",
-  p: "",
+  p: "This is a react project where users can create surveys and share them with thier audiences. The main objective for this project was to improve my design skills. This is a react project and when ever I build a project to improve my skills I make sure to learn atleast one new thing about the technologies I'm using and apply them in the project.",
   imgUrl: "./assets/portfolio-images/savvy.png",
   projectUrl: "https://savvvy.netlify.app/",
   timeframe: "2023-Present"
