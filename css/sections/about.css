@@ -1,10 +1,8 @@
 .about {
-  max-width: 100%;
-  height: fit-content;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  padding-top: 5rem;
   padding-bottom: 5rem;
-  height: fit-content;
   background-color: rgb(92, 131, 116);
 }
 
@@ -15,30 +13,20 @@
   margin: 0rem 0rem 0rem 0rem;
 }
 
-.about__container {
-  height: fit-content;
-  padding: 5rem 2rem 5rem 2rem;
-  display: flex;
-  align-items: center;
-}
-
-.about__div {
+.about__img {
   width: 30%;
-  border: 1px solid black;
-  height: 70vh;
-  background-image: url("../../assets/close-up-image-programer-working-his-desk-office.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .about__content {
+display: flex;
+flex-direction: column;
+justify-content: center;
   border-radius: 10px 0 0 10px;
   padding: 2rem;
   background-color: rgb(158, 200, 185);
-  width: 70%;
+  width: 100%;
   border-right: 1px solid black;
-  height: fit-content;
+  height: 45rem;
 }
 
 .about__content p {
