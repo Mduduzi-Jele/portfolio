@@ -12,6 +12,7 @@
 
 .home a {
   text-decoration: none;
+  color: black;
 }
 
 .home__header {
@@ -142,6 +143,7 @@
   color: white;
   font-size: 1.5rem;
   padding-left: 15rem;
+  padding-top: .5rem;
 }
 
 .home__menu {
