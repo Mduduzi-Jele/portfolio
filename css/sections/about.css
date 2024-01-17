@@ -18,23 +18,23 @@
 }
 
 .about__content {
-display: flex;
-flex-direction: column;
-justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   border-radius: 10px 0 0 10px;
   padding: 2rem;
   background-color: rgb(158, 200, 185);
   width: 100%;
   border-right: 1px solid black;
-  height: 45rem;
+  height: 25rem;
 }
 
 .about__content p {
   color: black;
-  font-size: 1.05rem;
+  font-size: .5rem;
   line-height: normal;
   opacity: 0.8;
-  font-size: 1.5rem;
+  font-size: .8rem;
 }
 
 .about__content__button {

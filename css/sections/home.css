@@ -10,6 +10,10 @@
   background-color: rgb(92, 131, 116, 0.8)
 }
 
+.home a {
+  text-decoration: none;
+}
+
 .home__header {
   display: flex;
   align-items: center;
@@ -122,16 +126,22 @@
   transform: rotate(180deg);
 }
 
+.home__content {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 3rem;
+}
+
 .home__title {
-  padding: 15rem 0rem 1rem 10rem;
-  font-size: 10rem;
+  /* padding: 15rem 0rem 1rem 5rem; */
+  font-size: 4rem;
   color: white;
 }
 
 .home__description {
   color: white;
-  font-size: 3rem;
-  padding-left: 30rem;
+  font-size: 1.5rem;
+  padding-left: 15rem;
 }
 
 .home__menu {
