@@ -163,3 +163,37 @@
 .home__menu__nav li {
   padding: 3rem 0 0 0;
 }
+
+@media only screen and (max-width: 320px ){
+  .home {
+    display: flex;
+    flex-direction: column;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .home__header {
+    height: 10%;
+  }
+
+  .home__header__menu {
+    display: block;
+  }
+
+  .home__header__nav-one {
+    display: none;
+  }
+
+  .home__header__nav-two {
+    display: none;
+  }
+
+  .home__title {
+    font-size: 2rem;
+  }
+
+  .home__description {
+    font-size: 1rem;
+    padding-left: 0px;
+  }
+}

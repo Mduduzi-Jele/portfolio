@@ -55,3 +55,31 @@
   color: aliceblue;
   background-color: black;
 }
+
+@media only screen and (max-width: 320px) {
+
+  .about {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about__content {
+    display: flex;
+    padding: 1rem;
+    border-right: 1px solid black;
+    width: auto;
+  }
+
+  .about__content p {
+    color: black;
+    font-size: .5rem;
+    line-height: normal;
+    opacity: 0.8;
+    /* font-size: .8rem; */
+  }
+
+  .about__img {
+    width: auto;
+  }
+
+}
