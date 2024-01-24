@@ -260,5 +260,38 @@
   }
 }
 
+@media (min-width: 321px) and (max-width: 600px) {
+  .form_main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.062);
+    position: relative;
+    overflow: hidden;
+    height: 30rem;
+    padding: 0px;
+  }
+
+  .form_main::before {
+    position: absolute;
+    content: "";
+    width: 18rem;
+    height: 20rem;
+    background-color: #9EC8B9;
+    transform: rotate(45deg);
+    left: -150px;
+    bottom: 100px;
+    z-index: 1;
+    border-radius: 30px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.082);
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  
+}
+
 
 
