@@ -136,13 +136,16 @@
 .home__title {
   /* padding: 15rem 0rem 1rem 5rem; */
   font-size: 4rem;
-  color: white;
+  color: #558787;
+  font-family: "Russo One", sans-serif;
+  font-style: normal;
 }
 
 .home__description {
-  color: white;
+  color: #558787;
+  font-family: "Russo One", sans-serif;
+  font-style: normal;
   font-size: 1.5rem;
-  padding-left: 15rem;
   padding-top: .5rem;
 }
 

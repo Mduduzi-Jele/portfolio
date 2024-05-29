@@ -1,20 +1,15 @@
 .about {
   display: flex;
   justify-content: center;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  align-items: center;
+  padding: 5rem;
   background-color: rgb(92, 131, 116);
-}
-
-.about__title {
-  color: black;
-  font-size: 1.5rem;
-  padding-bottom: 1rem;
-  margin: 0rem 0rem 0rem 0rem;
+  height: 100vh;
 }
 
 .about__img {
-  width: 30%;
+  width: 40%;
+  height: 60vh;
 }
 
 .about__content {
@@ -22,39 +17,27 @@
   flex-direction: column;
   justify-content: center;
   border-radius: 10px 0 0 10px;
-  padding: 2rem;
+  padding: 0rem 2rem 0rem 2rem;
   background-color: rgb(158, 200, 185);
   width: 100%;
-  border-right: 1px solid black;
-  height: auto;
+  height: 60vh;
+}
+
+.about__title {
+  font-family: "Russo One", sans-serif;
+  color: black;
+  font-size: 1.2rem;
+  padding-bottom: .8rem;
 }
 
 .about__content p {
+  font-family: "Russo One", sans-serif;
   color: black;
-  font-size: .5rem;
+  font-size: .7rem;
   line-height: normal;
   opacity: 0.8;
-  font-size: .8rem;
 }
 
-.about__content__button {
-  border: 1px solid black;
-  width: 10rem;
-  text-align: center;
-  padding: 0.8rem 0rem 0.8rem;
-  border-radius: 1rem;
-  opacity: 0.8;
-  cursor: pointer;
-  background-color: rgba(240, 248, 255);
-  align-self: flex-end;
-  margin: 2rem 6rem 0 0;
-}
-
-.about__content__button:hover {
-  box-shadow: 0.5px 0.5px 50px #252525;
-  color: aliceblue;
-  background-color: black;
-}
 
 @media only screen and (max-width: 320px) {
 
@@ -91,7 +74,7 @@
     justify-content: center;
     padding-top: 5rem;
     padding-bottom: 5rem;
-    background-color: rgb(92, 131, 116);
+    background-color: white;
   }
 
   .about__img {
@@ -106,5 +89,4 @@
 }
 
 @media (min-width: 601px) and (max-width: 1024px) {
-
 }
